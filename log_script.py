@@ -5,6 +5,8 @@ import random
 import linecache
 today=1
 test=1
+day1=1
+month1=3
 fileq=open('readfile','r')
 ppp=len(fileq.readlines())
 file = open('readfile','r')
@@ -35,7 +37,21 @@ while(today<=120):
         cell_02.text="19级"
 
         cell_02=table0.cell(2, 2)
-        cell_02.text="2 月 17 日"
+        if(day1<=31 and month1==3):
+            cell_02.text=str(month1) + " 月 " + str(day1) + " 日"
+            if(day1==31 and month1==3):
+                month1=month1+1
+                day1=1
+        elif(day1 <= 30 and month1 == 4):
+            cell_02.text=str(month1) + " 月 " + str(day1) + " 日"
+            if(day1==30 and month1 == 4):
+                month1=month1+1
+                day1=1
+        elif(day1 <= 31 and month1 == 5):
+            cell_02.text=str(month1) + " 月 " + str(day1) + " 日"
+
+
+                
 
         cell_02=table0.cell(2, 4)
         cell_02.text="地区"
@@ -75,6 +91,7 @@ while(today<=120):
         doc.save(your_name+"实习日志第"+str(today)+"天.docx")
 
     today=today+1
+    day1=day1+1
 
 
 
