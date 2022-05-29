@@ -18,5 +18,5 @@ cd log
 vim log_script
 修改信息，跟着模板走
 
+./log_script
 ```
-
