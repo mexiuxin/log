@@ -1,4 +1,7 @@
 # 经贸实习日志生成脚本
+## demo
+![demo](./demo.gng)
+
 ### 运行环境debian10 or CentOS7    python3.6及以下
 
 ### debian install
